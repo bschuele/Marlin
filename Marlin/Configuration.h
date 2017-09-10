@@ -71,9 +71,9 @@
 
 // Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
 // Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
-#define SENSOR_LEFT        1
+#define SENSOR_LEFT        0
 #define SENSOR_RIGHT       0
-#define SENSOR_FRONT      36
+#define SENSOR_FRONT      45
 #define SENSOR_BEHIND      0
 
 // Margin around perimiter of bed for probing (will not probe outside this margin)
