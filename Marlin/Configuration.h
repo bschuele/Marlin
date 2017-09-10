@@ -87,7 +87,7 @@
 //#define MANUAL // Do NOT use if you have a Z-Probe
 // Number of grid points in each direction
 // Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
-#define GRID_POINTS        10
+#define GRID_POINTS        5
 
 // Enable this to turn on support for a dual nozzle with two separate extruders
 // (plugged in to E1 port on controller)
