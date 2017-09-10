@@ -82,8 +82,8 @@
 // Bed leveling type (see: https://github.com/JimBrown/MarlinTarantula/wiki/Bed-leveling-types-(EasyConfig))
 //#define TRIPOINT
 //#define LINEAR
-//#define BILINEAR
-#define UBL
+#define BILINEAR
+//#define UBL
 //#define MANUAL // Do NOT use if you have a Z-Probe
 // Number of grid points in each direction
 // Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
@@ -116,8 +116,8 @@
 
 // Extra movement of Y axis (small bed only). Can help with probing more of the bed.
 // Set both to 0 (zero) if you have a large bed or do not have a Z-Probe.
-#define XTRA_BED_FRONT    55 // Distance bed can move towards the front past Y = 200
-#define XTRA_BED_BACK     5  // Distance bed can move towards the back past Y = 0
+#define XTRA_BED_FRONT    0 // Distance bed can move towards the front past Y = 200
+#define XTRA_BED_BACK     0  // Distance bed can move towards the back past Y = 0
 
 /************************ END OF EASY CONFIG ***************************
 //======================================================================
