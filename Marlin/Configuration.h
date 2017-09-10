@@ -58,7 +58,7 @@
 
 // Primary Extruder steps per mm (plugged in to E0 port on controller)
 // (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
-#define E0_STEPS      96.1261 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
+#define E0_STEPS      400 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
 //#define CHANGE_E0_DIRECTION   // If your extruder is going backwards, enable this.
 
 // Z-Probe type (must be none or one of them)
@@ -101,16 +101,16 @@
 //#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
 // TEVO Tarantula Custom PID Settings - Stock Hotend
-#define  hot_Kp 11.20
-#define  hot_Ki 0.60
-#define  hot_Kd 52.53
+#define  hot_Kp 26.00
+#define  hot_Ki 2.02
+#define  hot_Kd 83.60
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
 // TEVO Tarantula Custom PID Settings - Stock Heatbed
-#define  bed_Kp 841.21
-#define  bed_Ki 165.63
-#define  bed_Kd 1068.13
+#define  bed_Kp 287.66
+#define  bed_Ki 46.82
+#define  bed_Kd 441.85
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
