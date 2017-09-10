@@ -811,8 +811,10 @@
 /**
  * Z Servo Probe, such as an endstop switch on a rotating arm.
  */
-//#define Z_ENDSTOP_SERVO_NR 0   // Defaults to SERVO 0 connector.
-//#define Z_SERVO_ANGLES {70,0}  // Z Servo Deploy and Stow angles
+#if ENABLED(BLTOUCH)
+  #define Z_ENDSTOP_SERVO_NR 0   // Defaults to SERVO 0 connector.
+  #define Z_SERVO_ANGLES {10, 90}  // Z Servo Deploy and Stow angles
+#endif
 
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
