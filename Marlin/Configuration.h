@@ -73,8 +73,8 @@
 // Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
 #define SENSOR_LEFT        0
 #define SENSOR_RIGHT       0
-#define SENSOR_FRONT      45
-#define SENSOR_BEHIND      0
+#define SENSOR_FRONT       0
+#define SENSOR_BEHIND     26
 
 // Margin around perimiter of bed for probing (will not probe outside this margin)
 #define BED_MARGIN         5
