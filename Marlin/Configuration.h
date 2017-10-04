@@ -71,10 +71,10 @@
 
 // Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
 // Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        2
 #define SENSOR_RIGHT       0
 #define SENSOR_FRONT       0
-#define SENSOR_BEHIND     26
+#define SENSOR_BEHIND     22
 
 // Margin around perimiter of bed for probing (will not probe outside this margin)
 #define BED_MARGIN         5
@@ -100,15 +100,15 @@
 #define E1_STEPS      400 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
 //#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
-// TEVO Tarantula Custom PID Settings - Stock Hotend
-#define  hot_Kp 22.72
-#define  hot_Ki 1.77
-#define  hot_Kd 73.06
+// TEVO Tarantula Custom PID Settings - Hotend
+#define  hot_Kp 25.34
+#define  hot_Ki 2.05
+#define  hot_Kd 78.35
 
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
-// TEVO Tarantula Custom PID Settings - Stock Heatbed
+// TEVO Tarantula Custom PID Settings - Heatbed
 #define  bed_Kp 287.66
 #define  bed_Ki 46.82
 #define  bed_Kd 441.85
