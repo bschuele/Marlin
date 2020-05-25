@@ -101,17 +101,18 @@
 //#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
 // TEVO Tarantula Custom PID Settings - Hotend
-#define  hot_Kp 25.34
-#define  hot_Ki 2.05
-#define  hot_Kd 78.35
+#define  hot_Kp 26.84
+#define  hot_Ki 1.93
+#define  hot_Kd 93.46
 
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
 // TEVO Tarantula Custom PID Settings - Heatbed
-#define  bed_Kp 287.66
-#define  bed_Ki 46.82
-#define  bed_Kd 441.85
+#define  bed_Kp 359.22
+#define  bed_Ki 61.76
+#define  bed_Kd 522.35
+    
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
