@@ -80,7 +80,7 @@
  * Z-Probe type (must be none or one of them)
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
-//#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
+#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
 //#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
@@ -94,8 +94,8 @@
 //#define TRIPOINT
 //#define LINEAR
 //#define BILINEAR
-//#define UBL
-#define MANUAL
+#define UBL
+//#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
@@ -157,9 +157,9 @@
 // More info here: http://reprap.org/wiki/PID_Tuning
 
 // TEVO Tarantula Custom PID Settings - Heatbed
-#define  bed_Kp 287.66
-#define  bed_Ki 46.82
-#define  bed_Kd 441.85
+#define  bed_Kp 359.22
+#define  bed_Ki 61.76
+#define  bed_Kd 522.35
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
@@ -216,8 +216,8 @@
  * Extra movement of Y axis. Can help with probing more of the bed.
  * Set both to 0 (zero) if you do not have a Z-Probe.
  */
-#define XTRA_BED_FRONT    0  // Distance bed can move towards the front past Y = 200 (Y=280 for large bed)
-#define XTRA_BED_BACK     0  // Distance bed can move towards the back past Y = 0
+#define XTRA_BED_FRONT    55  // Distance bed can move towards the front past Y = 200 (Y=280 for large bed)
+#define XTRA_BED_BACK     5  // Distance bed can move towards the back past Y = 0
 
 /**
  * Enable ONLY ONE of these if one of your stepper ports is not working and you wish to use the E1 stepper port.
