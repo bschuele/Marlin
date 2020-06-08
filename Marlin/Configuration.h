@@ -28,7 +28,7 @@
 
 ***********************************************************************/
 
-#define PRINTER_NAME "TEVO Tarantula (EasyConfig)"  // Change this to whatever you wish, or leave it as it is.
+#define PRINTER_NAME "TEVO Tarantula Benjamin Schüle"  // Change this to whatever you wish, or leave it as it is.
                                                     // NOTE: Whatever you put here will have " Ready..." appended to it.
 
 /**
@@ -93,8 +93,8 @@
  */
 //#define TRIPOINT
 //#define LINEAR
-//#define BILINEAR
-#define UBL
+#define BILINEAR
+//#define UBL
 //#define MANUAL
 
 /**
