@@ -116,7 +116,7 @@
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
-#define BED_MARGIN         1
+#define BED_MARGIN         5
 
 /**
  * Servo probe deploy and stow angles
@@ -183,7 +183,7 @@
  *       PLA and ABS will appear under both Custom Command and Prepare.
  */
 #define Hot_PLA     215
-#define Bed_PLA      75
+#define Bed_PLA      60
 
 #define Hot_ABS 		240
 #define Bed_ABS 		100
