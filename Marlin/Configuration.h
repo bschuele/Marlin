@@ -53,8 +53,8 @@
 
 // Offset from endpoints to get nozzle to 0,0 (front/left of bed)
 // (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
-#define NOZZLE_X          -2
-#define NOZZLE_Y          -4
+#define NOZZLE_X          0
+#define NOZZLE_Y        -32
 
 // Primary Extruder steps per mm (plugged in to E0 port on controller)
 // (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
@@ -71,13 +71,13 @@
 
 // Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
 // Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
-#define SENSOR_LEFT        2
-#define SENSOR_RIGHT       0
-#define SENSOR_FRONT       0
-#define SENSOR_BEHIND     22
+#define SENSOR_LEFT        0
+#define SENSOR_RIGHT      39
+#define SENSOR_FRONT      21
+#define SENSOR_BEHIND      0
 
 // Margin around perimiter of bed for probing (will not probe outside this margin)
-#define BED_MARGIN         5
+#define BED_MARGIN         20
 
 // Bed leveling type (see: https://github.com/JimBrown/MarlinTarantula/wiki/Bed-leveling-types-(EasyConfig))
 //#define TRIPOINT
@@ -87,7 +87,7 @@
 //#define MANUAL // Do NOT use if you have a Z-Probe
 // Number of grid points in each direction
 // Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
-#define GRID_POINTS        5
+#define GRID_POINTS        3
 
 // Enable this to turn on support for a dual nozzle with two separate extruders
 // (plugged in to E1 port on controller)
