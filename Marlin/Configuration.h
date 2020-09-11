@@ -104,8 +104,10 @@
  */
 #define SENSOR_LEFT        0
 #define SENSOR_RIGHT      39
-#define SENSOR_FRONT      21
+#define SENSOR_FRONT      17
 #define SENSOR_BEHIND      0
+
+#define SENSOR_Z_OFFSET	   -0.744
 
 /**
  * Number of grid points in each direction
