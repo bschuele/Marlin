@@ -93,8 +93,8 @@
  */
 //#define TRIPOINT
 //#define LINEAR
-#define BILINEAR
-//#define UBL
+//#define BILINEAR
+#define UBL
 //#define MANUAL
 
 /**
@@ -111,7 +111,7 @@
  * Number of grid points in each direction
  * Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
  */
-#define GRID_POINTS        3
+#define GRID_POINTS        12
 
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
@@ -1352,7 +1352,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { SENSOR_RIGHT - SENSOR_LEFT, SENSOR_BEHIND - SENSOR_FRONT, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { SENSOR_RIGHT - SENSOR_LEFT, SENSOR_BEHIND - SENSOR_FRONT, SENSOR_Z_OFFSET }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
