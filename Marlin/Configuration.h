@@ -1510,7 +1510,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 200
+// Changed because of new X-Carrige colide with Z Oldham coupler
+#define X_BED_SIZE 170
 #if ENABLED(LARGE_BED)
   #define Y_BED_SIZE 280
 #else
