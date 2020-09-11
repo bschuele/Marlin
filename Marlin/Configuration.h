@@ -1512,11 +1512,13 @@
 // The size of the print bed
 // Changed because of new X-Carrige colide with Z Oldham coupler
 #define X_BED_SIZE 170
-#if ENABLED(LARGE_BED)
-  #define Y_BED_SIZE 280
-#else
-  #define Y_BED_SIZE 200
-#endif
+#define Y_BED_SIZE 180
+
+// #if ENABLED(LARGE_BED)
+//   #define Y_BED_SIZE 280
+// #else
+//   #define Y_BED_SIZE 200
+// #endif
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0 - XTRA_BED_LEFT
