@@ -93,8 +93,8 @@
  */
 //#define TRIPOINT
 //#define LINEAR
-//#define BILINEAR
-#define UBL
+#define BILINEAR
+//#define UBL
 //#define MANUAL
 
 /**
@@ -113,7 +113,7 @@
  * Number of grid points in each direction
  * Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
  */
-#define GRID_POINTS        12
+#define GRID_POINTS        6
 
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
