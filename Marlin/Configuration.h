@@ -250,7 +250,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 /**
  * Enable this to provide a realtime control over the head position via the LCD menu system that works while printing.
