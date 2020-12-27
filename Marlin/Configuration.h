@@ -55,8 +55,8 @@
  * Offset from endpoints to get nozzle to 0,0 (front/left of bed)
  * (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
  */
-#define NOZZLE_X          0
-#define NOZZLE_Y          -32
+#define NOZZLE_X          -2
+#define NOZZLE_Y          -4
 
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
@@ -102,10 +102,10 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        0
-#define SENSOR_RIGHT      39
-#define SENSOR_FRONT      17
-#define SENSOR_BEHIND      0
+#define SENSOR_LEFT        2
+#define SENSOR_RIGHT       0
+#define SENSOR_FRONT       0
+#define SENSOR_BEHIND     22
 
 #define SENSOR_Z_OFFSET	   -0.744
 
@@ -1512,15 +1512,12 @@
 // @section machine
 
 // The size of the print bed
-// Changed because of new X-Carrige colide with Z Oldham coupler
-#define X_BED_SIZE 170
-#define Y_BED_SIZE 180
-
-// #if ENABLED(LARGE_BED)
-//   #define Y_BED_SIZE 280
-// #else
-//   #define Y_BED_SIZE 200
-// #endif
+#define X_BED_SIZE 200
+#if ENABLED(LARGE_BED)
+  #define Y_BED_SIZE 280
+#else
+  #define Y_BED_SIZE 200
+#endif
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0 - XTRA_BED_LEFT
