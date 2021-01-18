@@ -107,7 +107,7 @@
 #define SENSOR_FRONT       0
 #define SENSOR_BEHIND     22
 
-#define SENSOR_Z_OFFSET	   -1.482
+#define SENSOR_Z_OFFSET	   -1.29
 
 /**
  * Number of grid points in each direction
@@ -156,9 +156,9 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 26.84
-#define  hot_Ki 1.93
-#define  hot_Kd 93.46
+#define  hot_Kp 27.82
+#define  hot_Ki 2.53
+#define  hot_Kd 76.34
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
